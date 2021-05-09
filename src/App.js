@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Profil from './profile/profilComponent.js';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+  
+      <Profil fullName="Amal Bourezgui" bio="I'am 27 years old"
+       profession="Developper web & UX/UI designer"> 
+
+      <img src="./img.jpg" alt="imageProfile" style={{border: 'solid 2px aqua', width:250}}/> 
+
+      </Profil>
+      
     </div>
   );
 }
